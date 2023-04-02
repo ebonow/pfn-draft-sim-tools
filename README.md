@@ -82,5 +82,6 @@ There are still a few things I would like to potentially for the ability to focu
 
 ## Disclaimer
 I am not responsible for the team at PFN changing their website in such a way that this no longer works. I am not affiliated with the fine folks there. 
+# pfn-draft-sim-tools
 
 Also as you may notice from my screenshots, I am using a custom stylesheet I wrote which allows me to see more of the screen. I might be willing to make this available as well, but am conflicted between enabling people to have a better UX and ultimately see the full list of draft results without scrolling vs promoting ways to hide their sponsors when _other sites_ have instead opted for a paywall.
