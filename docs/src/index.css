@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+a {
+  color: #0077c9;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: "Rubik", "Impact", sans-serif;
+  text-transform: uppercase;
+}
+
+header small {
+  font-size: .75rem;
+  color:rgba(200,200,200,.9);
+  font-style: italic;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav li {
+  margin-left: 1rem;
+}
+
+/* Main content styles */
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+ul, ol {
+  text-align: left;
+  margin: 1rem;
+}
+
+li {
+  margin-bottom: .5rem;
+}
+
+.todo {
+  list-style-type: none;
+}
+
+.todo::before {
+  content: '';
+  display: inline-flex;
+  font-size: 10px;
+  height: 1em;
+  width: 1em;
+  border: 2px solid;
+  border-radius: 2px;
+  margin-right: .5rem;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.bookmark {
+  color: #0077c9;
+  padding: 0.25rem 0.5rem;
+  background-color: #f8f8f8;
+  border: 1px solid;
+  font-size: .75rem;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none !important;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+footer p {
+  font-size: 0.8rem;
+}
