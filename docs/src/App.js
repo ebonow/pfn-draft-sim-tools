@@ -20,11 +20,7 @@ function App() {
   const onChange = e => setTeam(e.target.value)
 
   useEffect(() => {
-   const timer = setInterval(() => { 
-      setToggledImg(p => !p) 
-      console.log('tick')
-    }, 1000)
-
+    const timer = setInterval(() => { setToggledImg(p => !p) }, 1000)
     return () => clearInterval(timer)
   }, [])
 
@@ -206,15 +202,6 @@ function App() {
           </p>
         </section>
       </main>
-
-      {/* <img src="./images/toggle-off.png" width="360" alt="Screenshot toggle off" />
-<img src="./images/toggle-on.png" width="360" alt="Screenshot toggle on" />
- */}
-      {/* 
-[ARI]("javascript:(function()%7Bconst%20TEAM%20%3D%20'ARI'%3B%0Alet%20toggledOn%20%3D%20false%3B%0A%0Aconst%20toggleMyPicks%20%3D%20(team)%20%3D%3E%20%7B%0A%20%20toggledOn%20%3D%20!toggledOn%3B%0A%0A%20%20const%20picks%20%3D%20document.getElementById('draft-order-list-container').getElementsByClassName('draft-card')%0A%0A%20%20const%20isMyPick%20%3D%20p%20%3D%3E%20(p.firstChild.firstChild.alt%20%3D%3D%3D%20team)%3B%0A%20%20for%20(const%20p%20of%20picks)%20%7B%0A%20%20%20%20p.style.display%20%3D%20(toggledOn%20%26%26%20!isMyPick(p))%20%3F%20'none'%20%3A%20'flex'%3B%0A%20%20%7D%0A%7D%0A%0Aconst%20btnImg%20%3D%20document.createElement('img')%3B%0AbtnImg.style.filter%20%3D%20'invert(1)'%3B%0AbtnImg.src%20%3D%20%22%2Fmockdraft%2Fsim-control-icons%2Fscouting-report-icon.png%22%3B%0A%0Aconst%20btnTxt%20%3D%20document.createElement('p')%3B%0AbtnTxt.innerText%20%3D%20'MY%20PICKS'%3B%0A%0Aconst%20newButton%20%3D%20document.createElement('button')%3B%0AnewButton.classList.add('sim-management-button-div')%3B%0AnewButton.addEventListener(%22click%22%2C%20()%20%3D%3E%20toggleMyPicks(TEAM)%2C%20false)%3B%0AnewButton.appendChild(btnImg)%3B%0AnewButton.appendChild(btnTxt)%3B%0A%0Aconst%20btnContainer%20%3D%20document.getElementById('sim-management-buttons')%3B%0AbtnContainer.prepend(newButton)%3B%7D)()%3B">)
- */}
-
-      {/* <img src="./images/edit.png" width="240" alt="Rename bookmarklet" /> */}
     </div>
   );
 }
