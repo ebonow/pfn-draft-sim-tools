@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/pfn-mock-draft-tools/static/css/main.d691ea73.css",
+    "main.js": "/pfn-mock-draft-tools/static/js/main.deb63bd5.js",
+    "static/js/787.4723fd3a.chunk.js": "/pfn-mock-draft-tools/static/js/787.4723fd3a.chunk.js",
+    "static/media/toggle-off.png": "/pfn-mock-draft-tools/static/media/toggle-off.30229a8bc80f544c1610.png",
+    "static/media/toggle-on.png": "/pfn-mock-draft-tools/static/media/toggle-on.c61e940917c76d9f33ee.png",
+    "static/media/edit.png": "/pfn-mock-draft-tools/static/media/edit.586341b2701f61913236.png",
+    "static/media/draft.png": "/pfn-mock-draft-tools/static/media/draft.d809e8b89e623005767f.png",
+    "index.html": "/pfn-mock-draft-tools/index.html",
+    "main.d691ea73.css.map": "/pfn-mock-draft-tools/static/css/main.d691ea73.css.map",
+    "main.deb63bd5.js.map": "/pfn-mock-draft-tools/static/js/main.deb63bd5.js.map",
+    "787.4723fd3a.chunk.js.map": "/pfn-mock-draft-tools/static/js/787.4723fd3a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d691ea73.css",
+    "static/js/main.deb63bd5.js"
+  ]
+}
