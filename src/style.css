@@ -1,0 +1,79 @@
+#ad-banner-container,
+#user-team-list ,
+#results-team-list-and-logo,
+#results-bottom-logo-container {
+  display: none;
+}
+
+#sub-header-container {
+  height: 90vh;
+  top: 10vh;
+}
+
+#team-sim-results-div {
+  max-height: 80vh;
+}
+
+.modal-backdrop {
+  height: 100vh;
+  top: 0;
+}
+
+.modal {
+  margin-top: 12vh;
+  justify-content: space-between;
+}
+
+.modal-button-container, 
+.modal-button-container-sub, 
+#trade-builder-buttons {
+  position: unset;
+}
+
+.sim-management-button-div {
+  height: unset;
+}
+
+#sim-body {
+  height: 90vh;
+}
+
+[data-value] {
+  position: relative;
+  margin-bottom: 4px;
+}
+
+[data-value]::before {
+  content: 'Value: ' attr(data-value);
+  color: #777;
+  font-size: 10px;
+  position: absolute;
+  left: 2px;
+  bottom: -4px;
+  line-height: 1;
+}
+
+.picks-to-trade-div {
+  height: 100%;
+  position: relative;
+}
+
+[data-package-ratio]::before {
+  content: attr(data-package-ratio);
+  position: absolute;
+  color: green;
+  font-weight: 600;
+  left: 0;
+  right: 0;
+  bottom: 0.25rem;
+}
+
+[data-package-value]::after {
+  content: attr(data-package-value);
+  position: absolute;
+  width: 100%;
+  bottom: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
