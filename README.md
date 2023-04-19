@@ -2,6 +2,9 @@
 # pfn-draft-sim-tools
 A tool used to make the best free mock draft tool a bit better.
 
+Homepage: https://ebonow.github.io/pfn-mock-draft-tools/
+
+
 ## Description
 This script can be run as a bookmarklet (a bookmark that can add some code to a webpage) that when used from the PFN Draft Simulator, will add a button option to your actions items called "MY PICKS".
 
