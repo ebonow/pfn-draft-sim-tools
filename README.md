@@ -7,11 +7,11 @@ This script can be run as a bookmarklet (a bookmark that can add some code to a 
 
 Clicking this new button toggles the picks on the board between all the picks on the board and those only for your team of choice.
 
-<img src="./images/toggle-off.png" width="360" alt="Screenshot toggle off" />
-<img src="./images/toggle-on.png" width="360" alt="Screenshot toggle on" />
+<img src="./src/images/toggle-off.png" width="360" alt="Screenshot toggle off" />
+<img src="./src/images/toggle-on.png" width="360" alt="Screenshot toggle on" />
 
 Additionally, all trades will now show the pick values.
-<img src="./images/trade.png" width="360" alt="Screenshot show trade values" />
+<img src="./src/images/trade.png" width="360" alt="Screenshot show trade values" />
 
 Finally, some styling optimizations have been made to make the results screen more readable.
 
@@ -21,7 +21,7 @@ Finally, some styling optimizations have been made to make the results screen mo
 
 2. Right-click the link in your toolbar, select "Edit" and then change the name to whatever you like (optional)
 
-<img src="./images/edit.png" width="240" alt="Rename bookmarklet" />
+<img src="./src/images/edit.png" width="240" alt="Rename bookmarklet" />
 
 
 3. Start your draft and then press the bookmarklet link once it's started. You may now use the new button toggle "MY PICKS" for the selected team
