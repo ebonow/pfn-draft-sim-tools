@@ -98,15 +98,27 @@ li {
   list-style-type: none;
 }
 
+.todo.done > span {
+  text-decoration: line-through;
+}
+
 .todo::before {
   content: '';
   display: inline-flex;
-  font-size: 10px;
-  height: 1em;
-  width: 1em;
+  font-size: .75rem;
+  height: 1rem;
+  width: 1rem;
   border: 2px solid;
   border-radius: 2px;
   margin-right: .5rem;
+}
+
+.todo.done::before {
+  content: '✔️';
+}
+
+.flexed {
+  display: flex;
 }
 
 .App-logo {

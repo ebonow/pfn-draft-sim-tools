@@ -2,22 +2,23 @@ import { useEffect, useState } from 'react';
 import logo from "./images/draft.png";
 import toggleOnImg from "./images/toggle-on.png";
 import toggleOffImg from "./images/toggle-off.png";
+import tradeImg from "./images/trade.png";
 import renameImg from "./images/edit.png";
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import file from '!raw-loader!./script.js';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import style from '!raw-loader!./style.css';
 
-const TEAMS = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAX', 'KC', 'LAC', 'LAR', 'LV', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'PHI', 'PIT', 'SEA', 'SF', 'TB', 'TEN', 'WAS']
+//const TEAMS = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAX', 'KC', 'LAC', 'LAR', 'LV', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'PHI', 'PIT', 'SEA', 'SF', 'TB', 'TEN', 'WAS']
 
 function App() {
-  const [ team, setTeam ] = useState('')
   const [toggledImg, setToggledImg] = useState(0)
 
   const script = `javascript:${encodeURIComponent(`(function(){${file?.trim()}})();`)}`
+  const bookmarkHref = script.replace('__CSS__', style)
 
-  const bookmarkHref = team && script.replace('CHI', team)
-
-  const onChange = e => setTeam(e.target.value)
+  // const onChange = e => setTeam(e.target.value)
 
   useEffect(() => {
     const timer = setInterval(() => { setToggledImg(p => !p) }, 1000)
@@ -58,11 +59,21 @@ function App() {
           <div>
             <img src={!toggledImg ? toggleOffImg : toggleOnImg} width="100%" alt="Screenshot" />
           </div>
+          <div style={{ display: 'flex', margin: '2rem 0', alignItems: 'center', padding: '1rem', gap: '1rem', background: '#0756C2' }}>
+            <div style={{ background: '#fff', alignSelf: 'normal', padding: '1rem' }}>
+              <b>4/18/23 Update:</b>
+              <div>Now all trades will also show the draft pick values assigned to each pick (per the Hill draft chart) as well as the underlying values assigned to each player by PFN.</div>
+            </div>
+            <img src={tradeImg} width="360" alt="Screenshot show trade values" />
+          </div>
+          <p>
+            Finally, some styling optimizations have been made to make the results screen more readable.
+          </p>
         </section>
         <section>
           <h2>How do I set it up?</h2>
           <ol>
-            <li>
+            {/* <li>
               <div>
                 <label htmlFor="teams">Choose a team: </label>
                 <select name="teams" id="teams" onChange={onChange}>
@@ -74,13 +85,13 @@ function App() {
             </li>
 
             {!!team && (
-              <>
+              <> */}
                 <li>
                   <span>Drag this bookmarklet link into your browser toolbar: </span>
                   <a
                     className="bookmark"
                     href={bookmarkHref}
-                  >{`PFN - ${team} Picks`}</a>
+                  >{`PFN Draft Tool`}</a>
                 </li>
                 <li>
                   Right-click the link and select "Edit" and then change the
@@ -104,8 +115,8 @@ function App() {
                     everytime a new draft starts.
                   </div>
                 </li>
-              </>
-            )}
+              {/* </> */}
+            {/* )} */}
           </ol>
         </section>
 
@@ -158,12 +169,12 @@ function App() {
             <li className="todo">
               Find way to preserve and auto-populate last trade attempt details
             </li>
-            <li className="todo">
-              Find way to show JJ/Hill trade values when proposing trades
+            <li className="todo done">
+              <span>Find way to show Hill trade values when proposing trades</span>
             </li>
-            <li className="todo">
-              Add styling to make draft results readable and easily more
-              sharable
+            <li className="todo done">
+              <span>Add styling to make draft results readable and easily more
+              sharable</span>
             </li>
           </ul>
           <p>
