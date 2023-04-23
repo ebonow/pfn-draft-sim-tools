@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
-import logo from "./images/draft.png";
+// import logo from "./images/draft.png";
 import toggleOnImg from "./images/toggle-on.png";
 import toggleOffImg from "./images/toggle-off.png";
 import tradeImg from "./images/trade.png";
 import renameImg from "./images/edit.png";
+import heroImg from "./images/hero.png";
 
 // eslint-disable-next-line import/no-webpack-loader-syntax
 import file from '!raw-loader!./script.js';
@@ -28,7 +29,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={heroImg} className="App-logo" alt="logo" />
         <h1>PFN Mock Draft Tools</h1>
         <small>
           because the best NFL draft simulation experience doesn't have to be
