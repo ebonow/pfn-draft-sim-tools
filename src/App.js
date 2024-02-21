@@ -40,9 +40,7 @@ function App() {
         <section>
           <h2>Description</h2>
           <p>
-            NFL Mock Drafts can be a fun. You know what's not fun? Suddenly
-            seeing your NFL GM fantasy playground locked behind a paywall. No
-            fear though, PFN provides a free alternative. And while I have had
+            NFL Mock Drafts can be a fun and while I have had
             fun with PFN's Draft Simulator, I can't help but feel there are some
             missing things, most importantly was a quick way to view my own
             draft picks, so I decided to write a bookmarklet to remedy that.
