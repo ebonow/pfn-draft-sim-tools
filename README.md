@@ -10,6 +10,8 @@ This script can be run as a bookmarklet (a bookmark that can add some code to a 
 
 Clicking this new button toggles the picks on the board between all the picks on the board and those only for your team of choice.
 
+#### NOTE: As of 2/26/24 - The UI updates have broken this extension. I'm unsure how much of the underlying code has changed, but will shortly take a look into it. 
+
 <img src="./src/images/toggle-off.png" width="360" alt="Screenshot toggle off" />
 <img src="./src/images/toggle-on.png" width="360" alt="Screenshot toggle on" />
 
